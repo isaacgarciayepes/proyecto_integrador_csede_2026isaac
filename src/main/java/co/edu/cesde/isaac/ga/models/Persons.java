@@ -10,13 +10,16 @@ public class Persons {
         this.status = status;
     }
 
-    Long userid;
-String code;
-String documentNumber;
-String firstName;
-String lastName;
-Boolean status;
+   private Long userid;
+    private String code;
+    private String documentNumber;
+    private String firstName;
+    private String lastName;
+    private Boolean status;
 
+    public Persons() {
+
+    }
     public Long getUserid() {
         return userid;
     }
