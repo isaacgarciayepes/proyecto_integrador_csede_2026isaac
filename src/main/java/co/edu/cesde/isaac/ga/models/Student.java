@@ -2,30 +2,37 @@ package co.edu.cesde.isaac.ga.models;
 
 
 
-public class Student extends Person {
+public class Teacher extends Person {
 
-    private String birthDate;
+    private Long teacherId;
 
-    public Student() {
+    public Teacher() {
         super();
     }
 
-    public Student(Long userId, String code, String documentNumber, String firstName, String lastName, String email, Boolean status, String birthDate) {
-        super(userId, code, documentNumber, firstName, lastName, email, status);
-        this.birthDate = birthDate;
+    public Teacher(Long teacherId, Long userId, String documentType, String documentNumber, String firstName, String lastName, String status) {
+        super(userId, documentType, documentNumber, firstName, lastName, status);
+        this.teacherId = teacherId;
     }
 
-    public String getBirthDate() {
-        return birthDate;
+    public Long getTeacherId() {
+        return teacherId;
     }
 
-    public void setBirthDate(String birthDate) {
-        this.birthDate = birthDate;
+    public void setTeacherId(Long teacherId) {
+        this.teacherId = teacherId;
     }
+
     @Override
     public String toString() {
-        return "Student = " + super.toString() +
-                "birthDate='" + birthDate + '\'';
+        return "Teacher{" +
+                "teacherId=" + teacherId +
+                ", userId=" + getUserId() +
+                ", documentType='" + getDocumentType() + '\'' +
+                ", documentNumber='" + getDocumentNumber() + '\'' +
+                ", firstName='" + getFirstName() + '\'' +
+                ", lastName='" + getLastName() + '\'' +
+                ", status='" + getStatus() + '\'' +
+                '}';
     }
-
 }
