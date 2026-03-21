@@ -1,16 +1,15 @@
-package co.edu.cesde.isaac.ga.models;
 
+package co.edu.cesde.isaac.ga.models.;
 
-
-public class Teacher extends Person {
+public class Student extends Person {
 
     private Long teacherId;
 
-    public Teacher() {
+    public Student() {
         super();
     }
 
-    public Teacher(Long teacherId, Long userId, String documentType, String documentNumber, String firstName, String lastName, String status) {
+    public Student(Long teacherId, Long userId, String documentType, String documentNumber, String firstName, String lastName, String status) {
         super(userId, documentType, documentNumber, firstName, lastName, status);
         this.teacherId = teacherId;
     }
@@ -34,5 +33,23 @@ public class Teacher extends Person {
                 ", lastName='" + getLastName() + '\'' +
                 ", status='" + getStatus() + '\'' +
                 '}';
+    }
+
+    private String getUserId() {
+    }
+
+    private String getLastName() {
+    }
+
+    private String getFirstName() {
+    }
+
+    private String getDocumentNumber() {
+    }
+
+    private String getDocumentType() {
+    }
+
+    public void SetFirstName(String carlos) {
     }
 }

@@ -4,82 +4,126 @@ package co.edu.cesde.isaac.ga.models;
 
 public abstract class Person {
 
-    protected Long userId;
-    protected String documentType;
-    protected String documentNumber;
-    protected String firstName;
-    protected String lastName;
-    protected String status;
 
-    protected Person() {
-    }
 
-    protected Person(Long userId, String documentType, String documentNumber, String firstName, String lastName, String status) {
-        this.userId = userId;
-        this.documentType = documentType;
-        this.documentNumber = documentNumber;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.status = status;
-    }
+        protected String DocumentType;    protected String code;
 
-    public Long getUserId() {
-        return userId;
-    }
+        protected Long userId;
+        protected String documentNumber;
+        protected String firstName;
+        protected String lastName;
+        protected String email;
+        protected Boolean status;
+        protected  Long birthDate;
+        protected Boolean StudentId;
+        protected Long StudentI;
 
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
+        public Boolean getStudentId() {
+            return StudentId;
+        }
 
-    public String getDocumentType() {
-        return documentType;
-    }
+        public void setStudentId(Boolean studentId) {
+            StudentId = studentId;
+        }
 
-    public void setDocumentType(String documentType) {
-        this.documentType = documentType;
-    }
+        public Long getBirthDate() {
+            return birthDate;
 
-    public String getDocumentNumber() {
-        return documentNumber;
-    }
+        }
 
-    public void setDocumentNumber(String documentNumber) {
-        this.documentNumber = documentNumber;
-    }
+        public void setBirthDate(Long birthDate) {
+            this.birthDate = birthDate;
+        }
 
-    public String getFirstName() {
-        return firstName;
-    }
+        protected Person() {
+        }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+        public String getDocumentType() {
+            return DocumentType;
+        }
 
-    public String getLastName() {
-        return lastName;
-    }
+        public void setDocumentType(Long documentType) {
+            DocumentType = String.valueOf(documentType);
+        }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+        public Person(Long userId, String code, String documentNumber, String firstName, String lastName, String email, Boolean status) {
+            this.userId = userId;
+            this.code = code;
+            this.documentNumber = documentNumber;
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.email = email;
+            this.status = status;
+        }
 
-    public String getStatus() {
-        return status;
-    }
+        public Long getUserId() {
+            return userId;
+        }
 
-    public void setStatus(String status) {
-        this.status = status;
-    }
+        public String getCode() {
+            return code;
+        }
 
-    @Override
-    public String toString() {
-        return "Person{" +
-                "userId=" + userId +
-                ", documentType='" + documentType + '\'' +
-                ", documentNumber='" + documentNumber + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", status='" + status + '\'' +
-                '}';
-    }
-}
+        public String getDocumentNumber() {
+            return documentNumber;
+        }
+
+        public String getFirstName() {
+            return firstName;
+        }
+
+        public String getLastName() {
+            return lastName;
+        }
+
+        public String getEmail() {
+            return email;
+        }
+
+        public Boolean getStatus() {
+            return status;
+        }
+
+        public void setUserId(Long userId) {
+            this.userId = userId;
+        }
+
+        public void setCode(String code) {
+            this.code = code;
+        }
+
+        public void setDocumentNumber(String documentNumber) {
+            this.documentNumber = documentNumber;
+        }
+
+        public void setFirstName(String firstName) {
+            this.firstName = firstName;
+        }
+
+        public void setLastName(String lastName) {
+            this.lastName = lastName;
+        }
+
+        public void setEmail(String email) {
+            this.email = email;
+        }
+
+        public void setStatus(Boolean status) {
+            this.status = status;
+        }
+
+        @Override
+        public String toString() {
+            return "Person{" +
+                    "userId=" + userId +
+                    ", code='" + code + '\'' +
+                    ", documentNumber='" + documentNumber + '\'' +
+                    ", firstName='" + firstName + '\'' +
+                    ", lastName='" + lastName + '\'' +
+                    ", email='" + email + '\'' +
+                    ", status=" + status +
+                    '}';
+        }
+
+        public void SetFirstName(String maria) {
+        }
